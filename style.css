@@ -1,0 +1,116 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("backg.jpeg"); 
+    background-size: cover;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: white;
+}
+
+header {
+    background-color: rgba(83, 32, 32, 0.7); 
+    font-weight: bold ;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.grid1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(64, 77, 192);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5927ed;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.section--background {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(32, 28, 28);
+    font-size: 36px;
+    font-weight: bold;
+    margin-top:  340px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+li {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.div {
+    flex-grow: 1;
+}
+
+i.fa-trash {
+    color: #d9534f;
+    cursor: pointer;
+}
+
+.taskDone {
+    text-decoration: line-through;/* Add strikethrough for completed tasks */
+}
+
+/* Reset default list style */
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* Apply counter to list items */
+ol#todo-list {
+    counter-reset: list-counter;
+}
+
+ol#todo-list li::before {
+    content: counter(list-counter) ". ";
+    counter-increment: list-counter;
+}
+
