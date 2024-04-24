@@ -32,7 +32,7 @@ input[type="text"] {
     border-radius: 5px;
     font-size: 20px;
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+    background-color: rgba(255, 255, 255, 0.8); 
 }
 
 button {
@@ -85,32 +85,10 @@ li {
     margin-right: 10px;
 }
 
-.div {
-    flex-grow: 1;
-}
-
-i.fa-trash {
-    color: #d9534f;
-    cursor: pointer;
-}
 
 .taskDone {
-    text-decoration: line-through;/* Add strikethrough for completed tasks */
+    text-decoration: line-through;
 }
 
-/* Reset default list style */
-ul, ol {
-    list-style: none;
-    padding: 0;
-}
 
-/* Apply counter to list items */
-ol#todo-list {
-    counter-reset: list-counter;
-}
-
-ol#todo-list li::before {
-    content: counter(list-counter) ". ";
-    counter-increment: list-counter;
-}
 
